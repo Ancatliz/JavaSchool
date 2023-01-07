@@ -8,9 +8,10 @@ public class Main_02 {
         Ship avrora = new Ship("Avrora", 4);
         Ship tortuga = new Ship("Tortuga", 3);
 
-        System.out.println(avrora.name);
-        System.out.println(avrora.getName());
-        System.out.println(tortuga.getName());
+        System.out.println("Имя корабля " + avrora.getName());
+        System.out.println("Имя корабля " + tortuga.getName());
+        System.out.println("Размер корабля " + avrora.getName() + " " + avrora.getSize());
+        System.out.println("Размер корабля " + tortuga.getName() + " " + tortuga.getSize());
 
 
         vasya.rename("Vlaseus");

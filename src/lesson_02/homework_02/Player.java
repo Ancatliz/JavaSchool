@@ -2,8 +2,9 @@ package lesson_02.homework_02;
 
 public class Player {
     // Поля
-    private  String name;
-    private  int points;
+    public String name;
+    public int points;
+    Map pleyerMap = new Map();
 
 
     // Конструкторы
@@ -34,5 +35,9 @@ public class Player {
     public void getPoints() {  // подсчет очков
         points += 1;
         System.out.println("Количество очков у " + name + ": " + points);
+    }
+
+    public String getName() {
+        return name;
     }
 }

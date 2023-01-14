@@ -4,14 +4,27 @@ public class Player {
     // Поля
     public String name;
     public int points;
-    Map pleyerMap = new Map();
+    Ship[] shipsList;
+    Map map;
 
 
     // Конструкторы
 
+
+    public Player(String name) {
+        this.name = name;
+        shipsList = new Ship[Map.countShips()];
+    }
+
+    public Player(int points) {
+        this.points = points;
+        shipsList = new Ship[Map.countShips()];
+    }
+
     public Player(String name, int points) {
         this.name = name;
         this.points = points;
+        shipsList = new Ship[Map.countShips()];
     }
 
 
@@ -19,16 +32,12 @@ public class Player {
 
     public void rename(String newname) {
         System.out.print("Игрок " + name + " решил изменить имя на - ");
-                name = newname;
+               name = newname;
         System.out.println(newname);
         }
 
-    int x; // координаты по горизонтали
-    int y; // координаты по вертикали
 
-    public String shot(int x, int y) { // нанесение удара игроком
-        this.x = x;
-        this.y = y;
+    public String shot(int x, int y) { // нанесение удара игроком по координатам x:y
         return "Игрок " + name + " решил ударить по ячейке " + "[" + x + ":" + y + "]";
         }
 
@@ -37,7 +46,7 @@ public class Player {
         System.out.println("Количество очков у " + name + ": " + points);
     }
 
-    public String getName() {
-        return name;
+    public void setMap(Map map) {
+        this.map = map;
     }
 }

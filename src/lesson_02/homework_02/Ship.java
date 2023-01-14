@@ -1,24 +1,32 @@
 package lesson_02.homework_02;
 
 public class Ship {
-    // параметры
- String name;
- int size;
- static String name1 = "Odnopalub";
- static String name2 = "Dwuhpalub";
- static String name3 = "Trehpalub";
- static String name4 = "Chetirehpalub";
+    // поля
+    String name;
+    int size;
+    static String name1 = "Odnopalub";
+    static String name2 = "Dwuhpalub";
+    static String name3 = "Trehpalub";
+    static String name4 = "Chetirehpalub";
 
-    Player player;
+    Player playerShip;
 
-    public Ship(Player player) {
-        this.player = player;
-    }
+
     // конструктор
+    public Ship(int size, Player playerShip) {
+        this.size = size;
+        this.playerShip = playerShip;
+    }
 
     public Ship(String name, int size) {
         this.name = name;
         this.size = size;
+    }
+
+    public Ship(String name, int size, Player playerShip) {
+        this.name = name;
+        this.size = size;
+        this.playerShip = playerShip;
     }
 
     //методы
@@ -30,5 +38,13 @@ public class Ship {
 
     public int getSize() {
         return size;
+    }
+
+    public Player getPlayerShip() {
+        return playerShip;
+    }
+
+    public void setPlayerShip(Player playerShip) {
+        this.playerShip = playerShip;
     }
 }

@@ -4,7 +4,7 @@ public class Map {
 
     // поля
 
-    int[][] field = new int[10][10];   // игровое поле
+    final int[][] field = new int[10][10];   // игровое поле
     // 0 - пустая ячейка;
     // 1 - стоит корабль;
     // 2 - враг промахнулся;
@@ -12,7 +12,7 @@ public class Map {
     // 4 - корабль уничтожен;
 
 
-    static int[] rules = new int[]{4, 3, 2, 1}; //  правила игры
+    final static int[] rules = new int[]{4, 3, 2, 1}; //  правила игры
     // [0] = 4 - однопалубный
     // [1] = 3 - двухпалубный
     // [2] = 2 - трёхпалубный
@@ -23,6 +23,7 @@ public class Map {
     // конструктор
 
     public Map(Player playerMap) {  // конструктор отображает принадлежность карты определенному игроку
+
         this.playerMap = playerMap;
     }
 
@@ -36,7 +37,7 @@ public class Map {
         return result;
     }
 
-    public void mapStatus() { // состояние ячеек на игровом поле
+    final public void mapStatus() { // состояние ячеек на игровом поле
         System.out.println("Статус карты: ");
         for (int[] i : field) {
             for (int j = 0; j < field.length; j++) {

@@ -4,10 +4,10 @@ public class Ship {
     // поля
     String name;
     int size;
-    static String name1 = "Odnopalub";
-    static String name2 = "Dwuhpalub";
-    static String name3 = "Trehpalub";
-    static String name4 = "Chetirehpalub";
+    final static String name1 = "Odnopalub";
+    final static String name2 = "Dwuhpalub";
+    final static String name3 = "Trehpalub";
+    final static String name4 = "Chetirehpalub";
 
     Player playerShip;
 

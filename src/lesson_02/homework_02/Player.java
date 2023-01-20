@@ -41,12 +41,12 @@ public class Player {
         return "Игрок " + name + " решил ударить по ячейке " + "[" + x + ":" + y + "]";
         }
 
-    public void getPoints() {  // подсчет очков
+    final public void getPoints() {  // подсчет очков
         points += 1;
         System.out.println("Количество очков у " + name + ": " + points);
     }
 
-    public void setMap(Map map) {
+    final public void setMap(Map map) {
         this.map = map;
     }
 }

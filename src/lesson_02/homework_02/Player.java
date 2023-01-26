@@ -36,7 +36,6 @@ public class Player {
         System.out.println(newname);
         }
 
-
     public String shot(int x, int y) { // нанесение удара игроком по координатам x:y
         return "Игрок " + name + " решил ударить по ячейке " + "[" + x + ":" + y + "]";
         }
@@ -46,7 +45,7 @@ public class Player {
         System.out.println("Количество очков у " + name + ": " + points);
     }
 
-    final public void setMap(Map map) {
+    public void setMap(Map map) {
         this.map = map;
     }
 }

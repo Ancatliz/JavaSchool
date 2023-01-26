@@ -18,6 +18,6 @@ public class Tesla extends Car implements Sedan {
     //методы
     @Override
     public void trunkFeatures() {
-        System.out.println("Автомобиль имеет дополнительный багажник спереди");
+        System.out.println("Автомобиль имеет дополнительное багажное пространство под капотом");
     }
 }

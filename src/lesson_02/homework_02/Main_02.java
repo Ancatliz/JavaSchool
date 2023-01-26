@@ -42,5 +42,7 @@ public class Main_02 {
 //       System.out.println (map2.shipStanding(4,6));
         map2.mapStatus();
         System.out.println(Map.countShips());
+
+        ShipType.info();
     }
 }

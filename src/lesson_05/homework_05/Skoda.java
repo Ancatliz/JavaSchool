@@ -11,7 +11,7 @@ public class Skoda extends Car implements Sedan {
     //методы
     @Override
     public void trunkFeatures() {
-        System.out.println("Автомобиль обладает повышенным объемом багажника");
+        System.out.println("Автомобиль обладает повышенным объёмом багажника");
     }
 
 

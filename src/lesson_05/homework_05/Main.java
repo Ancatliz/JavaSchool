@@ -20,6 +20,9 @@ public class Main {
         rivian.typeFeatures();
         rivian.carBody();
         rivian.patency();
+        rivian.Insurance();
+        rivian.to();
+        rivian.electric();
 
         Kia kia = new Kia("Carnival", "brown");
         Kia kia1 = new Kia("Carnival", "brown", "front", "manual", "diesel", 199, 2.1);
@@ -27,5 +30,6 @@ public class Main {
         kia1.info();
         kia1.highway();
         kia1.salonFeatures();
+        kia1.size();
     }
 }

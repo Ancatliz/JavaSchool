@@ -14,6 +14,7 @@ public class Kia extends Car implements MiniVen {
     }
 
     //методы
+
     @Override
     public void highway() {
         System.out.println("Автомобиль имеет адаптивный круизконтроль");
@@ -22,5 +23,9 @@ public class Kia extends Car implements MiniVen {
     @Override
     public void salonFeatures() {
         System.out.println("Кресла задних пассажитов можно сложить. Задний ряд можно демонтировать");
+    }
+
+    void size() {
+        System.out.println("Автомобиль имеет 7 пассажирских мест");
     }
 }

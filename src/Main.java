@@ -1,5 +1,5 @@
+import lesson_02.homework_02.Ship;
+
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+
 }

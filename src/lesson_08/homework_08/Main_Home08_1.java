@@ -3,7 +3,7 @@ package lesson_08.homework_08;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class Main_Home08 {
+public class Main_Home08_1 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
